@@ -1,4 +1,4 @@
-var House = function () {
+function House() {
   this.address = {
     street: '1234 Made Up Lane',
     city : 'Boulder',
@@ -6,14 +6,14 @@ var House = function () {
     zip : 80302
   }
   this.color = 'yellow';
+}
 
-  House.prototype.paint = function (color) {
-    this.color = color;
-    if (color === 'red') {
-      this.color = 'green';
-    }
+House.prototype.paint = function (color) {
+  this.color = color;
+  if (color === 'red') {
+    this.color = 'green';
   }
-};
+}
 
 // DO NOT MODIFY BELOW THIS LINE
 module.exports = House;

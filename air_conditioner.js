@@ -1,27 +1,27 @@
-var AirConditioner = function () {
+function AirConditioner() {
   this.currentTemperature = null;
   this.on = false;
+}
 
-  AirConditioner.prototype.turnOn = function () {
-    this.on = true;
+AirConditioner.prototype.turnOn = function () {
+  this.on = true;
+}
+
+AirConditioner.prototype.turnOff = function () {
+  this.on = false;
+}
+
+AirConditioner.prototype.setTemperature = function (temp) {
+  this.currentTemperature = temp;
+  if (temp < 60) {
+    this.currentTemperature = 60;
   }
-
-  AirConditioner.prototype.turnOff = function () {
-    this.on = false;
+  if (temp > 82) {
+    this.currentTemperature = 82;
   }
-
-  AirConditioner.prototype.setTemperature = function (temp) {
-    this.currentTemperature = temp;
-    if (temp < 60) {
-      this.currentTemperature = 60;
-    }
-    if (temp > 82) {
-      this.currentTemperature = 82;
-    }
-  }
+}
 
 
-};
 
 module.exports = AirConditioner;
 
