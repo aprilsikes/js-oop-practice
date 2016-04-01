@@ -5,6 +5,7 @@ var House = function () {
     state : 'CO',
     zip : 80302
   }
+  this.color = 'yellow'
 };
 
 // DO NOT MODIFY BELOW THIS LINE

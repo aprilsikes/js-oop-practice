@@ -17,7 +17,7 @@ describe('house', function () {
     });
 
     describe('color', function () {
-      xit('returns the color of the house', function () {
+      it('returns the color of the house', function () {
         assert.equal(house.color, 'yellow');
       });
     });
