@@ -5,13 +5,13 @@ var airConditioner = new AirConditioner();
 describe('airConditioner', function () {
   describe('properties', function () {
     describe('currentTemperature', function () {
-      xit('is initially null', function () {
+      it('is initially null', function () {
         assert.equal(airConditioner.currentTemperature, null);
       });
     });
 
     describe('on', function () {
-      xit('is initially false', function () {
+      it('is initially false', function () {
         assert.equal(airConditioner.on, false);
       });
     });
