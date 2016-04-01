@@ -12,7 +12,15 @@ var AirConditioner = function () {
 
   AirConditioner.prototype.setTemperature = function (temp) {
     this.currentTemperature = temp;
+    if (temp < 60) {
+      this.currentTemperature = 60;
+    }
+    if (temp > 82) {
+      this.currentTemperature = 82;
+    }
   }
+
+
 };
 
 module.exports = AirConditioner;

@@ -38,13 +38,13 @@ describe('airConditioner', function () {
         assert.equal(airConditioner.currentTemperature, 76);
       });
 
-      xit('does not allow the end user to turn the temperate below 60', function () {
+      it('does not allow the end user to turn the temperate below 60', function () {
         airConditioner.setTemperature(60);
         airConditioner.setTemperature(59);
         assert.equal(airConditioner.currentTemperature, 60);
       });
 
-      xit('does not allow the end user to turn the temperate above 82', function () {
+      it('does not allow the end user to turn the temperate above 82', function () {
         airConditioner.setTemperature(82);
         airConditioner.setTemperature(83);
         assert.equal(airConditioner.currentTemperature, 82);
