@@ -7,7 +7,7 @@ var house = new House();
 describe('house', function () {
   describe('properties', function () {
     describe('address', function () {
-      xit('returns an object with the provided defaults', function () {
+      it('returns an object with the provided defaults', function () {
         house.address.should.be.a('object');
         assert.equal(house.address.street, '1234 Made Up Lane');
         assert.equal(house.address.city, 'Boulder');
