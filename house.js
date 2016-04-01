@@ -1,6 +1,6 @@
-var house = {
-  // your code in this object
+var House = function () {
+
 };
 
 // DO NOT MODIFY BELOW THIS LINE
-module.exports = house;
+module.exports = House;

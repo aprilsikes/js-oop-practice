@@ -1,6 +1,7 @@
-var refrigerator = {
-  // your code in this object
-};
+var Refrigerator = function(){
+  
+}
+
 
 // DO NOT MODIFY BELOW THIS LINE
-module.exports = refrigerator;
+module.exports = Refrigerator;

@@ -1,7 +1,8 @@
 var assert = require('assert');
 var chai = require('chai');
 var should = chai.should();
-var house = require('../house');
+var House = require('../house');
+var house = new House();
 
 describe('house', function () {
   describe('properties', function () {

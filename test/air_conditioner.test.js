@@ -1,5 +1,6 @@
 var assert = require('assert');
-var airConditioner = require('../air_conditioner');
+var AirConditioner = require('../air_conditioner');
+var airConditioner = new AirConditioner();
 
 describe('airConditioner', function () {
   describe('properties', function () {

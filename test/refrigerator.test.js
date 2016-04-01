@@ -1,7 +1,8 @@
 var assert = require('assert');
 var chai = require('chai');
 var should = chai.should();
-var refrigerator = require('../refrigerator');
+var Refrigerator = require('../refrigerator');
+var refrigerator = new Refrigerator();
 
 describe('refrigerator', function () {
   describe('properties', function () {
