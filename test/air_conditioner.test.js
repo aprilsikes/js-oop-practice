@@ -19,14 +19,14 @@ describe('airConditioner', function () {
 
   describe('methods', function () {
     describe('turnOn', function () {
-      xit('sets the on state to true', function () {
+      it('sets the on state to true', function () {
         airConditioner.turnOn();
         assert.equal(airConditioner.on, true);
       });
     });
 
     describe('turnOff', function () {
-      xit('sets the on state to false', function () {
+      it('sets the on state to false', function () {
         airConditioner.turnOff();
         assert.equal(airConditioner.on, false);
       });
