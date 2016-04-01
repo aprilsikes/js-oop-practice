@@ -2,30 +2,31 @@
 
 ### Objective
 
-The objective of this repository is to work through multiple examples of state and behavior using example JavaScript objects.
+The objective of this repository is to work through multiple examples of OOP style
+JavaScript, exploring state and behavior using JavaScript constructors.
 
 ### How to use
 
 * Clone this repository
-* `cd` into the directory this repository is cloned in
-* Run individual files with:
+* `cd` into the directory
+* `npm install chai`
+* Run individual test files with:
 
   ```
-  jasmine spec/filename.js
+  mocha test/filename.test.js
   ```
 
-* Run all specs with:
+* Run all tests with:
 
   ```
-  jasmine
+  mocha
   ```
 
-* Your code will live in `house.js`, `refrigerator.js` and a file you will add. A reminder that the course is about finding and looking for patterns. Do not hesitate to use other work to see how things are set up.
+* Your code will live in `house.js` and `air_conditioner.js`
 
-### Recommendations
+__REMEMBER HOW TO PRACTICE TDD__
 
-The recommended order for working through test files is:
-
-1. `spec/refrigerator_spec.js`
-1. `spec/house_spec.js`
-1. `spec/air_conditioner_spec.js` (_Hint:_ This one will require some more set up than the others)
+* Red - watch the test fail and read the error message
+* Green - write the least amount of necessary code to get test to pass
+* Refactor - ask yourself if you can write cleaner code ( well named variables etc)
+* `commit, add, push` after each passing test
