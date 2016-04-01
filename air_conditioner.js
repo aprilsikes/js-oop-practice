@@ -1,5 +1,5 @@
 var AirConditioner = function () {
-  // this.currentTemperature = null;
+  this.currentTemperature = null;
   this.on = false;
 
   AirConditioner.prototype.turnOn = function () {
@@ -8,6 +8,10 @@ var AirConditioner = function () {
 
   AirConditioner.prototype.turnOff = function () {
     this.on = false;
+  }
+
+  AirConditioner.prototype.setTemperature = function (temp) {
+    this.currentTemperature = temp;
   }
 };
 

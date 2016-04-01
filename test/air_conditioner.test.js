@@ -33,7 +33,7 @@ describe('airConditioner', function () {
     });
 
     describe('setTemperature', function () {
-      xit('sets the temperature to the provided temperature', function () {
+      it('sets the temperature to the provided temperature', function () {
         airConditioner.setTemperature(76);
         assert.equal(airConditioner.currentTemperature, 76);
       });
