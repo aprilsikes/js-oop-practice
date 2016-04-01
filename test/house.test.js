@@ -25,13 +25,13 @@ describe('house', function () {
 
   describe('methods', function () {
     describe('#paint', function () {
-      xit('changes the color of the house to the provided argument', function () {
+      it('changes the color of the house to the provided argument', function () {
         house.paint('green');
 
         assert.equal(house.color, 'green');
       });
 
-      xit('does not allow for red houses', function () {
+      it('does not allow for red houses', function () {
         house.paint('green');
         house.paint('red');
 
